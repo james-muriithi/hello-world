@@ -1,0 +1,37 @@
+.login-form {
+  background: #ffffff; /* give the login form a white bacground*/
+  padding: 10px 30px 70px; /* give padding top left bottom respectively*/
+  border-radius: 5px;
+}
+.card{
+	margin-top: 150px;
+}
+/* style the immage at the top of the login form */
+.img{
+	width:35%;
+}
+/* give the submit buttn a margin at the top */
+.btn{
+	margin-top: 10px;
+}
+/* set a background image */
+.container-fluid{
+	background-image: url('../images/banner.jpg'); /* put 2 dots and a slash means its in the previos 
+  folder because the css file is located in css folder and the image in previos folder(hello word) then in images*/
+	background-size: cover;
+	height: calc(100vh);
+	position: relative;
+	z-index: 1;
+}
+/* this adds a faded black color on top of the background image */
+/* if there's sth you dont get you can ask */
+.container-fluid:after {
+    position: absolute;
+    background: rgba(0, 0, 0, .7);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: calc(100vh);/* calculate 100% height of the screen*/
+    content: "";
+    z-index: -1;
+}
